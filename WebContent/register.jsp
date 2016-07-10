@@ -4,8 +4,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<title>Login</title>
 </head>
 <body>
 	<div class="row">
@@ -14,12 +14,13 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<form action="actionlogin" method="post">
-				<h4>Login to your account to access information</h4>
+				<h4>Register to join us.</h4>
 				<input type="text" name="username" class="form-group form-control" placeholder="username" required="">
+				<input type="text" name="email" class="form-group form-control" placeholder="email" required="">
 				<input type="password" name="password" class="form-group form-control"  placeholder="password" required="">
-				<input type="submit" value="Login" class="form-group form-control btn-success">
+				<input type="submit" value="Register" class="form-group form-control btn-success">
 			</form>
-			<p>Don't have an account yet? <a href="register">Create an account</a></p>
+			
 		</div>
 		<div class="col-sm-3 col-md-4">
 			

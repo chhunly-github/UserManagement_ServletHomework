@@ -6,7 +6,7 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
-	
+	private String role;
 	public int getId() {
 		return id;
 	}
@@ -34,12 +34,19 @@ public class User {
 		}
 		this.email = email.trim();
 	}
-	public User(int id, String username, String password, String email) {
+	public User(int id, String username, String password, String email,String role) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.email = email;
+		this.role=role;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	
 }
