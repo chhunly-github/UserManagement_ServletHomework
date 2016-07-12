@@ -13,11 +13,13 @@
 			
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<form action="actionlogin" method="post">
+			<form action="actionregister" method="post">
 				<h4>Register to join us.</h4>
 				<input type="text" name="username" class="form-group form-control" placeholder="username" required="">
 				<input type="text" name="email" class="form-group form-control" placeholder="email" required="">
+				<input type="text" name="role" class="form-group form-control" placeholder="role" required="">
 				<input type="password" name="password" class="form-group form-control"  placeholder="password" required="">
+				<input type="password" class="form-group form-control"  placeholder="confirm password" required="">
 				<input type="submit" value="Register" class="form-group form-control btn-success">
 			</form>
 			

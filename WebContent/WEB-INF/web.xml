@@ -12,6 +12,16 @@
     <servlet-name>actionlogin</servlet-name>
     <url-pattern>/actionlogin</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>actionregister</servlet-name>
+    <servlet-class>controller.UserRegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>actionregister</servlet-name>
+    <url-pattern>/actionregister</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <servlet-name>home</servlet-name>
     <jsp-file>/index.jsp</jsp-file>
@@ -20,6 +30,7 @@
     <servlet-name>home</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>login</servlet-name>
     <jsp-file>/login.jsp</jsp-file>
@@ -28,6 +39,7 @@
     <servlet-name>login</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>register</servlet-name>
     <jsp-file>/register.jsp</jsp-file>
@@ -36,6 +48,7 @@
     <servlet-name>register</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>userlist</servlet-name>
     <servlet-class>controller.UserListController</servlet-class>
@@ -44,6 +57,7 @@
     <servlet-name>userlist</servlet-name>
     <url-pattern>/users</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>update</servlet-name>
     <servlet-class>controller.UpdateUserController</servlet-class>

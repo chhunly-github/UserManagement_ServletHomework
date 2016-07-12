@@ -9,8 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="">
-		<table>
+	<form action="actionupdate" method="post">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th>ID</th>

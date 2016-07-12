@@ -71,13 +71,11 @@ public class UserFilter implements Filter {
 			PreparedStatement ps=cnn.prepareStatement(sql);
 			ps.setInt(1, user.getId());
 			ResultSet rs=ps.executeQuery();
-			if(rs.next() && rs.getString("role").equals("admin"))
+			if(rs.next() && rs.getString("role").equalsIgnoreCase("admin"))
 				return true;
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return false;
